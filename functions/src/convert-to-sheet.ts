@@ -39,16 +39,6 @@ export interface IPostingRow {
     credit?: number;
     commodity: string;
 }
-export const SHEET_HEADERS: string[] = [
-    'id',
-    'date',
-    'payee',
-    'description',
-    'account',
-    'debit',
-    'credit',
-    'commodity',
-];
 
 export const beancountToSheets = (
     transactions: ITransaction[],

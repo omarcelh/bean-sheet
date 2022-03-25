@@ -8,5 +8,9 @@ typings/
 # Node.js dependency directory
 node_modules/
 
-# Service Account
+# GCP Credentials
 bean-sheet-*.json
+credentials.json
+
+# VScode
+.vscode
