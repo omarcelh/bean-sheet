@@ -29,7 +29,9 @@ export interface ITransaction {
 }
 
 export const beancountToSheets = (transactions: ITransaction[]): string[][] => {
-    const sortedTransactions = [...transactions].sort((t1, t2) => t1.entry.meta.lineno - t2.entry.meta.lineno);
+    const sortedTransactions = [...transactions].sort((t1, t2) =>
+        new Date(t2.entry.date) > new Date(t1.entry.date) ? 1 : -1
+    );
     let sheets: string[][] = [];
 
     sortedTransactions.forEach((transaction, idx) => {

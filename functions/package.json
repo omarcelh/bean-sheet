@@ -15,7 +15,9 @@
   },
   "main": "lib/index.js",
   "dependencies": {
+    "@types/axios": "^0.14.0",
     "@types/gapi": "0.0.41",
+    "axios": "^0.26.1",
     "dotenv": "^16.0.0",
     "firebase-admin": "^10.0.2",
     "firebase-functions": "^3.18.0",
