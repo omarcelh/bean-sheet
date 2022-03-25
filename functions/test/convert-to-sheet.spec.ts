@@ -60,62 +60,88 @@ describe('convert-to-sheet', () => {
     describe('beancountToSheets', () => {
         it('should convert entire beancount text to a sheet', () => {
             expect(beancountToSheets([transaction])).toMatchObject([
-                {
-                    id: '1',
-                    date: '2015-02-04',
-                    payee: 'BANK FEES',
-                    description: 'Monthly bank fee',
-                },
-                {
-                    account: 'Assets:US:BofA:Checking',
-                    credit: 4,
-                    commodity: 'USD',
-                },
-                {
-                    account: 'Expenses:Financial:Fees',
-                    debit: 4,
-                    commodity: 'USD',
-                },
+                [
+                    '1',
+                    '2015-02-04',
+                    'BANK FEES',
+                    'Monthly bank fee',
+                ],
+                [
+                    '',
+                    '',
+                    '',
+                    '',
+                    'Assets:US:BofA:Checking',
+                    '',
+                    '4',
+                    'USD',
+                ],
+                [
+                    '',
+                    '',
+                    '',
+                    '',
+                    'Expenses:Financial:Fees',
+                    '4',
+                    '',
+                    'USD',
+                ],
             ]);
         });
     });
 
     describe('transactionToRow', () => {
         it('should convert a transaction to a sheet row', () => {
-            expect(transactionToRow('1', transaction)).toStrictEqual({
-                id: '1',
-                date: '2015-02-04',
-                payee: 'BANK FEES',
-                description: 'Monthly bank fee',
-            });
+            expect(transactionToRow('1', transaction)).toStrictEqual([
+                '1',
+                '2015-02-04',
+                'BANK FEES',
+                'Monthly bank fee',
+            ]);
         });
     });
 
     describe('postingToRow', () => {
         it('should convert a posting to a sheet row with credit field', () => {
-            expect(postingToRow(postings[0])).toStrictEqual({
-                account: 'Assets:US:BofA:Checking',
-                credit: 4,
-                commodity: 'USD',
-            });
+            expect(postingToRow(postings[0])).toStrictEqual([
+                '',
+                '',
+                '',
+                '',
+                'Assets:US:BofA:Checking',
+                '',
+                '4',
+                'USD',
+            ]);
         });
 
         it('should convert a posting to a sheet row with debit field', () => {
-            expect(postingToRow(postings[1])).toStrictEqual({
-                account: 'Expenses:Financial:Fees',
-                debit: 4,
-                commodity: 'USD',
-            });
+            expect(postingToRow(postings[1])).toStrictEqual([
+                '',
+                '',
+                '',
+                '',
+                'Expenses:Financial:Fees',
+                '4',
+                '',
+                'USD',
+            ]);
         });
 
         it('should convert a posting to a sheet row with a warning', () => {
             const postingWith0 = { ...postings[0], units: { number: 0, currency: 'USD' } };
             jest.spyOn(global.console, 'warn');
 
-            expect(postingToRow(postingWith0)).toStrictEqual({
-                account: 'Assets:US:BofA:Checking',
-                commodity: 'USD',
-            });
+            expect(postingToRow(postingWith0)).toStrictEqual([
+                '',
+                '',
+                '',
+                '',
+                'Assets:US:BofA:Checking',
+                '',
+                '',
+                'USD',
+            ]);
             expect(console.warn).toBeCalledWith('Debit/credit cannot be equal to 0');
         });
     });

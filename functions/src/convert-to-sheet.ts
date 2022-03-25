@@ -27,25 +27,10 @@ export interface ITransaction {
     };
     hash: string;
 }
-export interface ITransactionRow {
-    id: string;
-    date: string;
-    payee: string;
-    description: string;
-}
-export interface IPostingRow {
-    account: string;
-    debit?: number;
-    credit?: number;
-    commodity: string;
-}
 
-export const beancountToSheets = (
-    transactions: ITransaction[],
-    overwrite: boolean = false
-): (ITransactionRow | IPostingRow)[] => {
+export const beancountToSheets = (transactions: ITransaction[]): string[][] => {
     const sortedTransactions = [...transactions].sort((t1, t2) => t1.entry.meta.lineno - t2.entry.meta.lineno);
-    let sheets: (ITransactionRow | IPostingRow)[] = [];
+    let sheets: string[][] = [];
 
     sortedTransactions.forEach((transaction, idx) => {
         sheets.push(transactionToRow((idx + 1).toString(), transaction));
@@ -55,24 +40,23 @@ export const beancountToSheets = (
     return sheets;
 };
 
-export const transactionToRow = (id: string, transaction: ITransaction): ITransactionRow => {
-    return {
-        id,
-        date: transaction.entry.date,
-        payee: transaction.entry.payee,
-        description: transaction.entry.narration,
-    };
+export const transactionToRow = (id: string, transaction: ITransaction): string[] => {
+    return [id, transaction.entry.date, transaction.entry.payee, transaction.entry.narration];
 };
 
-export const postingToRow = (posting: IPosting): IPostingRow => {
+export const postingToRow = (posting: IPosting): string[] => {
     if (posting.units.number == 0) {
         console.warn('Debit/credit cannot be equal to 0');
     }
 
-    return {
-        account: posting.account,
-        ...(posting.units.number > 0 && { debit: posting.units.number }),
-        ...(posting.units.number < 0 && { credit: posting.units.number * -1 }),
-        commodity: posting.units.currency,
-    };
+    return [
+        '', // id
+        '', // date
+        '', // payee
+        '', // description
+        posting.account,
+        posting.units.number > 0 ? posting.units.number.toString() : '',
+        posting.units.number < 0 ? (posting.units.number * -1).toString() : '',
+        posting.units.currency,
+    ];
 };
