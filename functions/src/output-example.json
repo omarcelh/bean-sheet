@@ -1,0 +1,646 @@
+{
+	"variant": "beancount",
+	"version": "2.2.1",
+	"entries": [{
+		"type": "Open",
+		"entry": {
+			"meta": {
+				"filename": "<auto_accounts>",
+				"lineno": 0
+			},
+			"date": "2015-01-01",
+			"account": "Assets:US:BofA:Checking",
+			"currencies": null,
+			"booking": null
+		},
+		"hash": "08c8aa0ac207a42466bfffc99ae23a65"
+	}, {
+		"type": "Open",
+		"entry": {
+			"meta": {
+				"filename": "<auto_accounts>",
+				"lineno": 1
+			},
+			"date": "2015-01-01",
+			"account": "Assets:US:Federal:PreTax401k",
+			"currencies": null,
+			"booking": null
+		},
+		"hash": "f29b3e287c69391f853f8190ac21a159"
+	}, {
+		"type": "Open",
+		"entry": {
+			"meta": {
+				"filename": "<auto_accounts>",
+				"lineno": 2
+			},
+			"date": "2015-01-01",
+			"account": "Assets:US:Hoogle:Vacation",
+			"currencies": null,
+			"booking": null
+		},
+		"hash": "36fcf5bb2cc45334f262cf4a9969206d"
+	}, {
+		"type": "Open",
+		"entry": {
+			"meta": {
+				"filename": "<auto_accounts>",
+				"lineno": 3
+			},
+			"date": "2015-01-01",
+			"account": "Assets:US:Vanguard:Cash",
+			"currencies": null,
+			"booking": null
+		},
+		"hash": "8dc6c31f2f6d015243a58bfaeedffbae"
+	}, {
+		"type": "Open",
+		"entry": {
+			"meta": {
+				"filename": "<auto_accounts>",
+				"lineno": 5
+			},
+			"date": "2015-01-01",
+			"account": "Expenses:Health:Dental:Insurance",
+			"currencies": null,
+			"booking": null
+		},
+		"hash": "82fd7cc9575943f88be97803a1826972"
+	}, {
+		"type": "Open",
+		"entry": {
+			"meta": {
+				"filename": "<auto_accounts>",
+				"lineno": 6
+			},
+			"date": "2015-01-01",
+			"account": "Expenses:Health:Life:GroupTermLife",
+			"currencies": null,
+			"booking": null
+		},
+		"hash": "a142fe867b3e890a9bdee97f5e6d0ab2"
+	}, {
+		"type": "Open",
+		"entry": {
+			"meta": {
+				"filename": "<auto_accounts>",
+				"lineno": 7
+			},
+			"date": "2015-01-01",
+			"account": "Expenses:Health:Medical:Insurance",
+			"currencies": null,
+			"booking": null
+		},
+		"hash": "554a6885e8429ab04ba5877f6cd235d7"
+	}, {
+		"type": "Open",
+		"entry": {
+			"meta": {
+				"filename": "<auto_accounts>",
+				"lineno": 8
+			},
+			"date": "2015-01-01",
+			"account": "Expenses:Health:Vision:Insurance",
+			"currencies": null,
+			"booking": null
+		},
+		"hash": "5ade7b4a9f8099c529a1077ad8a61c2c"
+	}, {
+		"type": "Open",
+		"entry": {
+			"meta": {
+				"filename": "<auto_accounts>",
+				"lineno": 10
+			},
+			"date": "2015-01-01",
+			"account": "Expenses:Taxes:Y2015:US:CityNYC",
+			"currencies": null,
+			"booking": null
+		},
+		"hash": "c3a88e218c3a895ab5592f1524ba2b6c"
+	}, {
+		"type": "Open",
+		"entry": {
+			"meta": {
+				"filename": "<auto_accounts>",
+				"lineno": 11
+			},
+			"date": "2015-01-01",
+			"account": "Expenses:Taxes:Y2015:US:Federal",
+			"currencies": null,
+			"booking": null
+		},
+		"hash": "13728fdc99a6dfd0324d30c3c692cec5"
+	}, {
+		"type": "Open",
+		"entry": {
+			"meta": {
+				"filename": "<auto_accounts>",
+				"lineno": 12
+			},
+			"date": "2015-01-01",
+			"account": "Expenses:Taxes:Y2015:US:Federal:PreTax401k",
+			"currencies": null,
+			"booking": null
+		},
+		"hash": "1e658f65467142745f4f167ad997a48e"
+	}, {
+		"type": "Open",
+		"entry": {
+			"meta": {
+				"filename": "<auto_accounts>",
+				"lineno": 13
+			},
+			"date": "2015-01-01",
+			"account": "Expenses:Taxes:Y2015:US:Medicare",
+			"currencies": null,
+			"booking": null
+		},
+		"hash": "ef3bd6e0858da0e25fb4c35dd962ddf7"
+	}, {
+		"type": "Open",
+		"entry": {
+			"meta": {
+				"filename": "<auto_accounts>",
+				"lineno": 14
+			},
+			"date": "2015-01-01",
+			"account": "Expenses:Taxes:Y2015:US:SDI",
+			"currencies": null,
+			"booking": null
+		},
+		"hash": "34be77d0428148a7805a030fee915e64"
+	}, {
+		"type": "Open",
+		"entry": {
+			"meta": {
+				"filename": "<auto_accounts>",
+				"lineno": 15
+			},
+			"date": "2015-01-01",
+			"account": "Expenses:Taxes:Y2015:US:SocSec",
+			"currencies": null,
+			"booking": null
+		},
+		"hash": "5fd74dddf922df3a7e6b500cb33aa800"
+	}, {
+		"type": "Open",
+		"entry": {
+			"meta": {
+				"filename": "<auto_accounts>",
+				"lineno": 16
+			},
+			"date": "2015-01-01",
+			"account": "Expenses:Taxes:Y2015:US:State",
+			"currencies": null,
+			"booking": null
+		},
+		"hash": "850f96893c9abe311116fb9823340709"
+	}, {
+		"type": "Open",
+		"entry": {
+			"meta": {
+				"filename": "<auto_accounts>",
+				"lineno": 17
+			},
+			"date": "2015-01-01",
+			"account": "Income:US:Hoogle:GroupTermLife",
+			"currencies": null,
+			"booking": null
+		},
+		"hash": "cb5ef233e8020ec11c20afc721b6c022"
+	}, {
+		"type": "Open",
+		"entry": {
+			"meta": {
+				"filename": "<auto_accounts>",
+				"lineno": 18
+			},
+			"date": "2015-01-01",
+			"account": "Income:US:Hoogle:Salary",
+			"currencies": null,
+			"booking": null
+		},
+		"hash": "e695759d525d6f6aa81b11060b225ef8"
+	}, {
+		"type": "Open",
+		"entry": {
+			"meta": {
+				"filename": "<auto_accounts>",
+				"lineno": 19
+			},
+			"date": "2015-01-01",
+			"account": "Income:US:Hoogle:Vacation",
+			"currencies": null,
+			"booking": null
+		},
+		"hash": "26e3ed5de7ef3829c271a37c90b34994"
+	}, {
+		"type": "Transaction",
+		"entry": {
+			"meta": {
+				"filename": "<string>",
+				"lineno": 12,
+				"__tolerances__": {
+					"USD": 0.005,
+					"IRAUSD": 0.005
+				}
+			},
+			"date": "2015-01-01",
+			"flag": "*",
+			"payee": "Hoogle",
+			"narration": "Payroll",
+			"tags": [],
+			"links": [],
+			"postings": [{
+				"account": "Assets:US:BofA:Checking",
+				"units": {
+					"number": 1350.60,
+					"currency": "USD"
+				},
+				"cost": null,
+				"price": null,
+				"flag": null,
+				"meta": {
+					"filename": "<string>",
+					"lineno": 13
+				}
+			}, {
+				"account": "Assets:US:Vanguard:Cash",
+				"units": {
+					"number": 1200.00,
+					"currency": "USD"
+				},
+				"cost": null,
+				"price": null,
+				"flag": null,
+				"meta": {
+					"filename": "<string>",
+					"lineno": 14
+				}
+			}, {
+				"account": "Income:US:Hoogle:Salary",
+				"units": {
+					"number": -4615.38,
+					"currency": "USD"
+				},
+				"cost": null,
+				"price": null,
+				"flag": null,
+				"meta": {
+					"filename": "<string>",
+					"lineno": 15
+				}
+			}, {
+				"account": "Income:US:Hoogle:GroupTermLife",
+				"units": {
+					"number": -24.32,
+					"currency": "USD"
+				},
+				"cost": null,
+				"price": null,
+				"flag": null,
+				"meta": {
+					"filename": "<string>",
+					"lineno": 16
+				}
+			}, {
+				"account": "Expenses:Health:Life:GroupTermLife",
+				"units": {
+					"number": 24.32,
+					"currency": "USD"
+				},
+				"cost": null,
+				"price": null,
+				"flag": null,
+				"meta": {
+					"filename": "<string>",
+					"lineno": 17
+				}
+			}, {
+				"account": "Expenses:Health:Dental:Insurance",
+				"units": {
+					"number": 2.90,
+					"currency": "USD"
+				},
+				"cost": null,
+				"price": null,
+				"flag": null,
+				"meta": {
+					"filename": "<string>",
+					"lineno": 18
+				}
+			}, {
+				"account": "Expenses:Health:Medical:Insurance",
+				"units": {
+					"number": 27.38,
+					"currency": "USD"
+				},
+				"cost": null,
+				"price": null,
+				"flag": null,
+				"meta": {
+					"filename": "<string>",
+					"lineno": 19
+				}
+			}, {
+				"account": "Expenses:Health:Vision:Insurance",
+				"units": {
+					"number": 42.30,
+					"currency": "USD"
+				},
+				"cost": null,
+				"price": null,
+				"flag": null,
+				"meta": {
+					"filename": "<string>",
+					"lineno": 20
+				}
+			}, {
+				"account": "Expenses:Taxes:Y2015:US:Medicare",
+				"units": {
+					"number": 106.62,
+					"currency": "USD"
+				},
+				"cost": null,
+				"price": null,
+				"flag": null,
+				"meta": {
+					"filename": "<string>",
+					"lineno": 21
+				}
+			}, {
+				"account": "Expenses:Taxes:Y2015:US:Federal",
+				"units": {
+					"number": 1062.92,
+					"currency": "USD"
+				},
+				"cost": null,
+				"price": null,
+				"flag": null,
+				"meta": {
+					"filename": "<string>",
+					"lineno": 22
+				}
+			}, {
+				"account": "Expenses:Taxes:Y2015:US:State",
+				"units": {
+					"number": 365.08,
+					"currency": "USD"
+				},
+				"cost": null,
+				"price": null,
+				"flag": null,
+				"meta": {
+					"filename": "<string>",
+					"lineno": 23
+				}
+			}, {
+				"account": "Expenses:Taxes:Y2015:US:CityNYC",
+				"units": {
+					"number": 174.92,
+					"currency": "USD"
+				},
+				"cost": null,
+				"price": null,
+				"flag": null,
+				"meta": {
+					"filename": "<string>",
+					"lineno": 24
+				}
+			}, {
+				"account": "Expenses:Taxes:Y2015:US:SDI",
+				"units": {
+					"number": 1.12,
+					"currency": "USD"
+				},
+				"cost": null,
+				"price": null,
+				"flag": null,
+				"meta": {
+					"filename": "<string>",
+					"lineno": 25
+				}
+			}, {
+				"account": "Expenses:Taxes:Y2015:US:SocSec",
+				"units": {
+					"number": 281.54,
+					"currency": "USD"
+				},
+				"cost": null,
+				"price": null,
+				"flag": null,
+				"meta": {
+					"filename": "<string>",
+					"lineno": 26
+				}
+			}, {
+				"account": "Assets:US:Federal:PreTax401k",
+				"units": {
+					"number": -1200.00,
+					"currency": "IRAUSD"
+				},
+				"cost": null,
+				"price": null,
+				"flag": null,
+				"meta": {
+					"filename": "<string>",
+					"lineno": 27
+				}
+			}, {
+				"account": "Expenses:Taxes:Y2015:US:Federal:PreTax401k",
+				"units": {
+					"number": 1200.00,
+					"currency": "IRAUSD"
+				},
+				"cost": null,
+				"price": null,
+				"flag": null,
+				"meta": {
+					"filename": "<string>",
+					"lineno": 28
+				}
+			}, {
+				"account": "Assets:US:Hoogle:Vacation",
+				"units": {
+					"number": 5,
+					"currency": "VACHR"
+				},
+				"cost": null,
+				"price": null,
+				"flag": null,
+				"meta": {
+					"filename": "<string>",
+					"lineno": 29
+				}
+			}, {
+				"account": "Income:US:Hoogle:Vacation",
+				"units": {
+					"number": -5,
+					"currency": "VACHR"
+				},
+				"cost": null,
+				"price": null,
+				"flag": null,
+				"meta": {
+					"filename": "<string>",
+					"lineno": 30
+				}
+			}]
+		},
+		"hash": "55be764f3ba650c043095b7710570a55"
+	}, {
+		"type": "Open",
+		"entry": {
+			"meta": {
+				"filename": "<auto_accounts>",
+				"lineno": 4
+			},
+			"date": "2015-02-04",
+			"account": "Expenses:Financial:Fees",
+			"currencies": null,
+			"booking": null
+		},
+		"hash": "416c3104363c74a56e4a04e40b794de7"
+	}, {
+		"type": "Transaction",
+		"entry": {
+			"meta": {
+				"filename": "<string>",
+				"lineno": 4,
+				"__tolerances__": {
+					"USD": 0.005
+				}
+			},
+			"date": "2015-02-04",
+			"flag": "*",
+			"payee": "BANK FEES",
+			"narration": "Monthly bank fee",
+			"tags": [],
+			"links": [],
+			"postings": [{
+				"account": "Assets:US:BofA:Checking",
+				"units": {
+					"number": -4.00,
+					"currency": "USD"
+				},
+				"cost": null,
+				"price": null,
+				"flag": null,
+				"meta": {
+					"filename": "<string>",
+					"lineno": 5
+				}
+			}, {
+				"account": "Expenses:Financial:Fees",
+				"units": {
+					"number": 4.00,
+					"currency": "USD"
+				},
+				"cost": null,
+				"price": null,
+				"flag": null,
+				"meta": {
+					"filename": "<string>",
+					"lineno": 6
+				}
+			}]
+		},
+		"hash": "9b383e9b42e14113bb102ea277c2526d"
+	}, {
+		"type": "Open",
+		"entry": {
+			"meta": {
+				"filename": "<auto_accounts>",
+				"lineno": 9
+			},
+			"date": "2015-02-06",
+			"account": "Expenses:Home:Rent",
+			"currencies": null,
+			"booking": null
+		},
+		"hash": "3bd39e19065c1aa81250fff24bce345a"
+	}, {
+		"type": "Transaction",
+		"entry": {
+			"meta": {
+				"filename": "<string>",
+				"lineno": 8,
+				"__tolerances__": {
+					"USD": 0.005
+				}
+			},
+			"date": "2015-02-06",
+			"flag": "*",
+			"payee": "RiverBank Properties",
+			"narration": "Paying the rent",
+			"tags": [],
+			"links": [],
+			"postings": [{
+				"account": "Assets:US:BofA:Checking",
+				"units": {
+					"number": -3600.00,
+					"currency": "USD"
+				},
+				"cost": null,
+				"price": null,
+				"flag": null,
+				"meta": {
+					"filename": "<string>",
+					"lineno": 9
+				}
+			}, {
+				"account": "Expenses:Home:Rent",
+				"units": {
+					"number": 3600.00,
+					"currency": "USD"
+				},
+				"cost": null,
+				"price": null,
+				"flag": null,
+				"meta": {
+					"filename": "<string>",
+					"lineno": 10
+				}
+			}]
+		},
+		"hash": "52c3e558cf1e69dd90ce74a4f98cc979"
+	}],
+	"errors": [],
+	"options": {
+		"filename": "<string>",
+		"include": [],
+		"input_hash": "d41d8cd98f00b204e9800998ecf8427e",
+		"dcontext": null,
+		"commodities": ["IRAUSD", "VACHR", "USD"],
+		"plugin": [
+			["beancount.plugins.auto_accounts", null],
+			["beancount.plugins.auto", null]
+		],
+		"title": "Beancount",
+		"name_assets": "Assets",
+		"name_liabilities": "Liabilities",
+		"name_equity": "Equity",
+		"name_income": "Income",
+		"name_expenses": "Expenses",
+		"account_previous_balances": "Opening-Balances",
+		"account_previous_earnings": "Earnings:Previous",
+		"account_previous_conversions": "Conversions:Previous",
+		"account_current_earnings": "Earnings:Current",
+		"account_current_conversions": "Conversions:Current",
+		"account_rounding": null,
+		"conversion_currency": "NOTHING",
+		"inferred_tolerance_default": {},
+		"inferred_tolerance_multiplier": 0.5,
+		"infer_tolerance_from_cost": false,
+		"documents": [],
+		"operating_currency": [],
+		"render_commas": false,
+		"plugin_processing_mode": "default",
+		"long_string_maxlines": 64,
+		"booking_method": null,
+		"allow_pipe_separator": false,
+		"allow_deprecated_none_for_tags_and_links": false,
+		"insert_pythonpath": false
+	}
+}
