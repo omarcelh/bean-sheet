@@ -1,0 +1,1 @@
+gcloud functions deploy sync --entry-point handle --runtime nodejs16 --trigger-http --allow-unauthenticated --region=asia-southeast2
