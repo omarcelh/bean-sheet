@@ -26,14 +26,14 @@ export class SheetService {
         };
     }
 
-    async getRows(): Promise<any[][] | undefined> {
+    async getRows(): Promise<any[][]> {
         return (
             await this.sheet.spreadsheets.values.get({
                 ...this.defaultOptions,
                 range: `${this.defaultSheet}!A2:H`,
                 valueRenderOption: 'UNFORMATTED_VALUE',
             })
-        ).data.values;
+        ).data.values || [];
     }
 
     async updateRows(range: string, values: any[][]): Promise<void> {
